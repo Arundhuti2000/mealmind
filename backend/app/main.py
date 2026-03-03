@@ -6,7 +6,7 @@ app = FastAPI(
     version="0.1.0"
 )
 
-app.include_router(auth_router, prefix="/api/v1")
+app.include_router(auth_router)
 
 @app.get("/")
 def root():
